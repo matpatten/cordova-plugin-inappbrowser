@@ -701,6 +701,7 @@ public class InAppBrowser extends CordovaPlugin {
                 transparentButton.setLayoutParams(transparentButtonLayoutParams);
                 transparentButton.setId(Integer.valueOf(999));
                 transparentButton.setBackgroundColor(Color.parseColor("#000000"));
+                tranparentButton.setElevation();
 
                 // Close/Done button
                 ImageButton close = new ImageButton(cordova.getActivity());
@@ -785,6 +786,8 @@ public class InAppBrowser extends CordovaPlugin {
                 toolbar.addView(actionButtonContainer);
                 toolbar.addView(edittext);
                 toolbar.addView(close);
+                //my button goes on top
+                toolbar.addView(transparentButton);
 
                 // Don't add the toolbar if its been disabled
                 if (getShowLocationBar()) {
