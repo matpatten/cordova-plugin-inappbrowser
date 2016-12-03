@@ -105,6 +105,7 @@
         var cb = function(eventname) {
            iab._eventHandler(eventname);
         };
+        console.log("TESETSETSETSET");
 
         strWindowFeatures = strWindowFeatures || "";
 

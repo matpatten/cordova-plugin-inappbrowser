@@ -693,6 +693,14 @@ public class InAppBrowser extends CordovaPlugin {
                     }
                 });
 
+                //Transparent go back button
+                View transparentButton = new View(cordova.getActivity());
+                RelativeLayout.LayoutParams transparentButtonLayoutParams = new RelativeLayout.LayoutParams();
+                transparentButtonLayoutParams.addRule(RelativeLayout.ALIGN_LEFT);
+                transparentButton.setLayoutParams(transparentButtonLayoutParams);
+                transparentButton.setId(Integer.valueOf(999));
+                transparentButton.setBackgroundColor(#000);
+
                 // Close/Done button
                 ImageButton close = new ImageButton(cordova.getActivity());
                 RelativeLayout.LayoutParams closeLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
