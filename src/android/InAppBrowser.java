@@ -701,7 +701,7 @@ public class InAppBrowser extends CordovaPlugin {
                 transparentButton.setLayoutParams(transparentButtonLayoutParams);
                 transparentButton.setId(Integer.valueOf(999));
                 transparentButton.setBackgroundColor(Color.parseColor("#000000"));
-                tranparentButton.setElevation();
+                transparentButton.setElevation(16f);
 
                 // Close/Done button
                 ImageButton close = new ImageButton(cordova.getActivity());
