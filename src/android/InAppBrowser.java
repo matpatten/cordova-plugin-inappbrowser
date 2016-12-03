@@ -696,7 +696,7 @@ public class InAppBrowser extends CordovaPlugin {
 
                 //Transparent go back button
                 View transparentButton = new View(cordova.getActivity());
-                RelativeLayout.LayoutParams transparentButtonLayoutParams = new RelativeLayout.LayoutParams();
+                RelativeLayout.LayoutParams transparentButtonLayoutParams = new RelativeLayout.LayoutParams(100, 100);
                 transparentButtonLayoutParams.addRule(RelativeLayout.ALIGN_LEFT);
                 transparentButton.setLayoutParams(transparentButtonLayoutParams);
                 transparentButton.setId(Integer.valueOf(999));
